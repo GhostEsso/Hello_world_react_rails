@@ -5,6 +5,9 @@ if ! gem list foreman -i --silent; then
   gem install foreman
 fi
 
+# Commande Yarn pour la surveillance des fichiers
+yarn build --watch &
+
 # Default to port 3000 if not specified
 export PORT="${PORT:-3000}"
 
